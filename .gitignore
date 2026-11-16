@@ -1,0 +1,16 @@
+# Rust / Tauri
+/target
+/src-tauri/target
+/src-tauri/gen
+
+# Node / frontend
+node_modules/
+dist/
+
+# Environment & logs
+.env
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
