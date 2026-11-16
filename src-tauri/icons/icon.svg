@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Open-Muse icon: an original minimal "M" mark with a spark dot.
+       Dark rounded square, violet-to-teal M. Not affiliated with Meta. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171a2e"/>
+      <stop offset="1" stop-color="#0b0d1a"/>
+    </linearGradient>
+    <linearGradient id="m" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8b7cff"/>
+      <stop offset="1" stop-color="#5eead4"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="url(#bg)"/>
+  <path d="M128 368 V168 L256 288 L384 168 V368" fill="none" stroke="url(#m)" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="256" cy="118" r="18" fill="#5eead4"/>
+</svg>
