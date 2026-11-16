@@ -1,0 +1,29 @@
+[package]
+name = "open-muse"
+version = "0.1.0"
+description = "Open-Muse — a native desktop client for Muse (Meta's personal AI agent)"
+authors = ["Giuliano Gramaglia"]
+edition = "2021"
+rust-version = "1.77"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+# Core framework. The `tray-icon` feature enables the system tray API;
+# `devtools` enables the Toggle DevTools menu item in release builds.
+tauri = { version = "2", features = ["tray-icon", "devtools"] }
+# A second launch focuses the existing window instead of opening a new one.
+tauri-plugin-single-instance = "2"
+# CmdOrCtrl+Shift+M toggles the main window from anywhere.
+tauri-plugin-global-shortcut = "2"
+# Persists window size and position across restarts.
+tauri-plugin-window-state = "2"
+# "Launch at login" toggle in the tray menu.
+tauri-plugin-autostart = "2"
+# Native message dialogs (About box).
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# PNG decoding for the tray icon (default features off, only PNG needed).
+image = { version = "0.25", default-features = false, features = ["png"] }
