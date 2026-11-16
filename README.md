@@ -1,5 +1,8 @@
 # Open-Muse
 
+[![Release](https://github.com/giulianogramaglia69-boop/Open-Muse/actions/workflows/release.yml/badge.svg)](https://github.com/giulianogramaglia69-boop/Open-Muse/actions/workflows/release.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A native desktop client for **Muse** — Meta's personal AI agent — for Linux,
 Windows and macOS. One codebase, built with [Tauri v2](https://tauri.app)
 (Rust + a tiny web frontend).
@@ -20,6 +23,11 @@ Windows and macOS. One codebase, built with [Tauri v2](https://tauri.app)
 - **Native menu** — About, Reload, Toggle DevTools, Zoom in / out / reset
 - **Launch at login** toggle (tray menu)
 
+## Screenshots
+
+<!-- TODO: replace with real screenshots of the app running on Linux / macOS / Windows -->
+_Coming soon — screenshots from the real app._
+
 ## Architecture
 
 - **Backend: 100% Rust.** All native behaviour lives in
@@ -35,7 +43,16 @@ Windows and macOS. One codebase, built with [Tauri v2](https://tauri.app)
 
 Grab the installer for your OS from the
 [Releases](https://github.com/giulianogramaglia69-boop/Open-Muse/releases)
-page (`.deb` / `.AppImage` for Linux, `.msi` for Windows, `.dmg` for macOS).
+page:
+
+| OS | Installer |
+| --- | --- |
+| Linux (Debian/Ubuntu) | `.deb` |
+| Linux (Fedora/RHEL) | `.rpm` |
+| Linux (any distro) | `.AppImage` |
+| Windows | `.msi` |
+| macOS | `.dmg` |
+
 Releases are built automatically by GitHub Actions on every `v*` tag.
 
 ## Build from source
